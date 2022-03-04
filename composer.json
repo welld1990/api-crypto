@@ -1,0 +1,29 @@
+{
+	"name" : "welld1990/api-crypto",
+	"type" : "library",
+	"keywords" : [
+		"api加密",
+		"api解密",
+		"api安全",
+		"接口加密",
+		"接口解密",
+		"数据解密",
+		"数据解密"
+	],
+	"description" : "服务端和客户端数据传输加密和认证，报文加密+签名验证",
+	"homepage" : "https://github.com/welld1990/",
+	"license" : "Apache-2.0",
+	"authors" : [{
+			"name" : "welld1990",
+			"email" : "1440080220@qq.com"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"welld1990\\api-crypto\\" : "src"
+		}
+	},
+	"require" : {
+		"php" : ">=5.6"
+	}
+}
