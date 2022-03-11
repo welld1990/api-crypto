@@ -20,7 +20,7 @@
 	],
 	"autoload" : {
 		"psr-4" : {
-			"welld1990\\api-crypto\\" : "src"
+			"welld1990\\ApiCrypto\\" : "src"
 		}
 	},
 	"require" : {
