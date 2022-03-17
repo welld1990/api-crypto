@@ -23,7 +23,7 @@ class CryptoClient
     );
     
     /**
-     * 构造器私有化:禁止从类外部实例化
+     * 构造器
      */
     public function __construct($config = array())
     {
@@ -42,7 +42,7 @@ class CryptoClient
     }
     
     /**
-     * 唯一实例
+     * 全局实例使用这个
      */
     public static function getInstance($config = array())
     {
@@ -56,7 +56,7 @@ class CryptoClient
     }
     
     /**
-     * 获取唯一的实例
+     * 删除实例
      */
     public static function removeInstance(){
         // 如果没有,则创建当前类的实例
