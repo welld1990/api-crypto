@@ -25,7 +25,7 @@ class CryptoClient
     /**
      * 构造器私有化:禁止从类外部实例化
      */
-    private function __construct($config = array())
+    public function __construct($config = array())
     {
         /* 获取配置 */
         $this->config   =   array_merge($this->config, $config);
@@ -53,6 +53,14 @@ class CryptoClient
         }
         // 如果已经有了当前类实例,就直接返回,不要重复创建类实例
         return self::$instance;
+    }
+    
+    /**
+     * 获取唯一的实例
+     */
+    public static function removeInstance(){
+        // 如果没有,则创建当前类的实例
+        self::$instance = null;
     }
     
     /**
